@@ -1,0 +1,3 @@
+include 'application'
+
+rootProject.name = 'gradle-kotlin-docker-dropwizard'
