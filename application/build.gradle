@@ -4,6 +4,7 @@ apply plugin: 'ca.cutterslade.analyze'
 
 repositories {
     jcenter()
+    maven { url "https://jitpack.io" }
 }
 
 dependencies {
@@ -17,6 +18,7 @@ dependencies {
     compile 'ru.vyarus:dropwizard-guicey:3.1.0'
 
     compile 'com.google.inject:guice:4.0'
+    compile 'com.github.RichoDemus.guice-classpath-scanning:guice-classpath-scanner:prerelease'
 
 
     testCompile 'junit:junit:4.12'

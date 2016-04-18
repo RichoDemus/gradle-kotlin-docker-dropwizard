@@ -1,6 +1,6 @@
 package com.richodemus.kotlin.dropwizard
 
-import com.richodemus.kotlin.dropwizard.inject.MyGuiceModule
+import com.github.richodemus.guice_classpath_scanning.ClassPathScanningModule
 import io.dropwizard.Application
 import io.dropwizard.setup.Bootstrap
 import io.dropwizard.setup.Environment
@@ -17,7 +17,7 @@ class MyApplication : Application<MyConfiguration>() {
     override fun initialize(bootstrap: Bootstrap<MyConfiguration>) =
             bootstrap.addBundle(GuiceBundle.builder<MyConfiguration>()
                     .enableAutoConfig("com.richodemus.kotlin.dropwizard.scan")
-                    .modules(MyGuiceModule())
+                    .modules(ClassPathScanningModule("com.richodemus.kotlin.dropwizard.service"))
                     .build())
 
 
