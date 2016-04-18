@@ -8,10 +8,7 @@ import ru.vyarus.dropwizard.guice.GuiceBundle
 
 class MyApplication : Application<MyConfiguration>() {
     companion object {
-        @JvmStatic
-        fun main(args: Array<String>) {
-            MyApplication().run(*args)
-        }
+        @JvmStatic fun main(args: Array<String>) = MyApplication().run(*args)
     }
 
     override fun initialize(bootstrap: Bootstrap<MyConfiguration>) =
@@ -19,7 +16,6 @@ class MyApplication : Application<MyConfiguration>() {
                     .enableAutoConfig("com.richodemus.kotlin.dropwizard.scan")
                     .modules(ClassPathScanningModule("com.richodemus.kotlin.dropwizard.service"))
                     .build())
-
 
     override fun run(configuration: MyConfiguration, environment: Environment) {
     }
