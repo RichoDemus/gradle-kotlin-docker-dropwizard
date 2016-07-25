@@ -6,3 +6,7 @@ Dropwizard app written in Kotlin built with Gradle running in Docker
 
 ## Finding outdated dependencies
     ./gradlew dependencyUpdates
+
+## Updating gradle wrapper version
+    ./gradlew wrapper --gradle-version 2.14.1
+
