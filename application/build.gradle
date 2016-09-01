@@ -13,12 +13,12 @@ repositories {
 dependencies {
     compile 'org.jetbrains.kotlin:kotlin-runtime:1.0.3'
 
-    compile 'io.dropwizard:dropwizard-core:0.9.3'
+    compile 'io.dropwizard:dropwizard-core:1.0.0'
     compile 'io.dropwizard.metrics:metrics-healthchecks:3.1.2'
 
     compile 'javax.ws.rs:javax.ws.rs-api:2.0.1'
 
-    compile 'ru.vyarus:dropwizard-guicey:3.2.0'
+    compile 'ru.vyarus:dropwizard-guicey:4.0.0'
 
     compile 'com.google.inject:guice:4.1.0'
     compile 'com.github.RichoDemus.guice-classpath-scanning:guice-classpath-scanner:prerelease'
@@ -35,8 +35,8 @@ buildscript {
     dependencies {
         classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.3'
         classpath 'com.github.ben-manes:gradle-versions-plugin:0.13.0'
-        classpath 'ca.cutterslade.gradle:gradle-dependency-analyze:1.0.4'
-        classpath 'com.bmuschko:gradle-docker-plugin:3.0.1'
+        classpath 'ca.cutterslade.gradle:gradle-dependency-analyze:1.1.0'
+        classpath 'com.bmuschko:gradle-docker-plugin:3.0.2'
     }
 }
 
