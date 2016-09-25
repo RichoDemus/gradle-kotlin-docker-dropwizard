@@ -11,9 +11,9 @@ repositories {
 }
 
 dependencies {
-    compile 'org.jetbrains.kotlin:kotlin-runtime:1.0.3'
+    compile 'org.jetbrains.kotlin:kotlin-runtime:1.0.4'
 
-    compile 'io.dropwizard:dropwizard-core:1.0.0'
+    compile 'io.dropwizard:dropwizard-core:1.0.2'
     compile 'io.dropwizard.metrics:metrics-healthchecks:3.1.2'
 
     compile 'javax.ws.rs:javax.ws.rs-api:2.0.1'
@@ -33,10 +33,10 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.3'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.4'
         classpath 'com.github.ben-manes:gradle-versions-plugin:0.13.0'
         classpath 'ca.cutterslade.gradle:gradle-dependency-analyze:1.1.0'
-        classpath 'com.bmuschko:gradle-docker-plugin:3.0.2'
+        classpath 'com.bmuschko:gradle-docker-plugin:3.0.3'
     }
 }
 
