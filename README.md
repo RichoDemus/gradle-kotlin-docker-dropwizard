@@ -3,6 +3,7 @@ Dropwizard app written in Kotlin built with Gradle running in Docker
 
 ## Running:
     ./build-and-run.sh
+point browser at [localhost:8080](http://localhost:8080)
 
 ## Finding outdated dependencies
     ./gradlew dependencyUpdates

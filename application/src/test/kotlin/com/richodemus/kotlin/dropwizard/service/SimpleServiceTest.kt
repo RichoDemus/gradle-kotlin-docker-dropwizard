@@ -6,6 +6,6 @@ import org.junit.Test
 class SimpleServiceTest {
     @Test
     fun `Should return the expected message`() {
-        assertThat(SimpleService().getMessage()).isEqualTo("The service class works")
+        assertThat(SimpleService().getMessage()).isEqualTo(Message("The backend works"))
     }
 }

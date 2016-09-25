@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType
 
 @Path("/hello-world")
 @Produces(MediaType.APPLICATION_JSON)
-internal class MyResource @Inject constructor(val service: Service){
+internal class MyResource @Inject constructor(val service: Service) {
 
     @GET
     fun hello() = service.getMessage()

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DAWIKBWGRID</title>
+</head>
+<body>
+Hello world! <br/>
+<div id="targetDiv">No response from backend yet...</div>
+</body>
+</html>
+<script>
+    var request = new XMLHttpRequest();
+    request.open('GET', '/api/hello-world/', true);
+
+    request.onload = function () {
+        var elem = document.getElementById('targetDiv');
+        if (this.status >= 200 && this.status < 400) {
+            var data = JSON.parse(this.response);
+            elem.innerHTML = data.message;
+        } else {
+            elem.innerHTML = "Failed to contact backend..."
+        }
+    };
+
+    request.onerror = function () {
+        var elem = document.getElementById('targetDiv');
+        elem.innerHTML = "Failed to contact backend..."
+    };
+
+    request.send();
+</script>
