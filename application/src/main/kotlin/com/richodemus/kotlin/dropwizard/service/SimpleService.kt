@@ -1,5 +1,9 @@
 package com.richodemus.kotlin.dropwizard.service
 
 internal class SimpleService : Service {
-    override fun getMessage() = Message("The backend works")
+    override fun getMessage() = listOf("The", "backend", "works")
+            .reduce { sum, new -> sum + " " + new }
+            .toMessage()
+
+    private fun String.toMessage() = Message(this)
 }
